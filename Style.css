@@ -1,0 +1,122 @@
+body, html{
+  margin:0;
+  padding:0;
+  background: url('Media Files/Test3.jpg');
+  -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
+}
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  background-size: cover;
+  /*object-fit: cover;*/
+}
+h1{
+  font-family: 'Slabo 27px', serif;
+  font-size: 75px;
+  color: white;
+  display: inline-block;
+  padding: 15px;
+}
+h2{
+  font-family: 'Slabo 27px', serif;
+  font-size: 50px;
+  color: white;
+  margin-top: 75px;
+}
+
+sup{
+  font-family: 'Slabo 27px', serif;
+  font-size: 15px;
+  color: white;
+}
+
+nav{
+  text-align: center;
+  /*background: #717171;*/
+  background-color:rgba(113, 113, 113, 0.5);
+  /*background: #a2c3d3;
+  opacity: 0.5;*/
+}
+
+a{
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: #FFF;
+}
+
+.navbarLinks{
+  cursor: pointer;
+}
+
+.small-head{
+  font-family: 'Slabo 27px', serif;
+  font-size: 38px;
+  color: white;
+}
+
+.icon-spacing{
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.profileImg{
+  margin: 50px;
+  border: solid;
+  border-width: 5px;
+  border-color: white;
+}
+
+.text{
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.descriptionText{
+ color: #FFFFFF;
+ font-family: 'Slabo 27px', serif;
+ font-size: 25px;
+ left: 30%;
+
+ /*text-align: center;
+ display: table-cell;
+ vertical-align: middle;
+ position: relative;
+ left: 50%;
+ right: -50%;
+ transform: translate(-50%, -50%) }*/
+}
+
+.navigation{
+  font-family: 'Slabo 27px', serif;
+  font-size: 30px;
+  color: white;
+  padding: 15px;
+}
+.jumbotron {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  color: #fff !important;
+}
+
+#logo{
+  margin-top: 150px;
+}
+
+#contactUs{
+  /*padding-top: 200px;*/
+}
