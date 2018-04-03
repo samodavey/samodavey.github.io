@@ -21,21 +21,21 @@ video {
   /*object-fit: cover;*/
 }
 h1{
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   color: white;
   display: inline-block;
   padding: 15px;
 }
 h2{
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 50px;
   color: white;
   margin-top: 75px;
 }
 
 sup{
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 15px;
   color: white;
 }
@@ -61,14 +61,14 @@ a:hover{
 }
 
 .small-head{
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 38px;
   color: white;
 }
 
 .icon-spacing{
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .profileImg{
@@ -76,6 +76,7 @@ a:hover{
   border: solid;
   border-width: 5px;
   border-color: white;
+
 }
 
 .text{
@@ -86,7 +87,7 @@ a:hover{
 
 .descriptionText{
  color: #FFFFFF;
- font-family: 'Slabo 27px', serif;
+ font-family: 'Oswald', sans-serif;
  font-size: 25px;
  left: 30%;
 
@@ -100,7 +101,7 @@ a:hover{
 }
 
 .navigation{
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   color: white;
   padding: 15px;
