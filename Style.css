@@ -114,10 +114,10 @@ a:hover{
   color: #fff !important;
 }
 
-#logo{
-  margin-top: 150px;
-}
-
-#contactUs{
-  /*padding-top: 200px;*/
+#videoBackground{
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
