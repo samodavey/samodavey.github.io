@@ -5,7 +5,12 @@ $('.homelink').on('click', function() {
 
 $('.aboutlink').on('click', function() {
     var body = $("html, body");
-    body.stop().animate({scrollTop:$('#aboutUs').offset().top}, '500');
+    body.stop().animate({scrollTop:$('#about').offset().top}, '500');
+})
+
+$('.skillslink').on('click', function() {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:$('#skills').offset().top}, '500');
 })
 
 $('.projectlink').on('click', function() {
@@ -13,7 +18,7 @@ $('.projectlink').on('click', function() {
     body.stop().animate({scrollTop:$('#projects').offset().top}, '500');
 })
 
-$('.contactlink').on('click', function() {
+$('.cvlink').on('click', function() {
     var body = $("html, body");
-    body.stop().animate({scrollTop:$('#contactUs').offset().top}, '500');
+    body.stop().animate({scrollTop:$('#cv').offset().top}, '500');
 })

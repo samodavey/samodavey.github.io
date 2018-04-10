@@ -20,17 +20,26 @@ video {
   background-size: cover;
   /*object-fit: cover;*/
 }
+p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #3C403F;
+  padding: 0px;
+  margin: 0px;
+  left: 30%;
+}
 h1{
   font-family: 'Oswald', sans-serif;
   font-size: 75px;
-  color: white;
+  color: #3C403F;
   display: inline-block;
   padding: 15px;
 }
 h2{
   font-family: 'Oswald', sans-serif;
   font-size: 50px;
-  color: white;
+  color: #3C403F;
   margin-top: 75px;
 }
 
@@ -42,10 +51,7 @@ sup{
 
 nav{
   text-align: center;
-  /*background: #717171;*/
-  background-color:rgba(113, 113, 113, 0.5);
-  /*background: #a2c3d3;
-  opacity: 0.5;*/
+  background-color:rgba(208, 208, 208, 0.7);
 }
 
 a{
@@ -53,11 +59,15 @@ a{
 }
 
 a:hover{
-  color: #FFF;
+  color:#dfa969 !important;
+}
+.icons{
+  color: #3C403F;
 }
 
 .navbarLinks{
   cursor: pointer;
+  color: #3C403F !important;
 }
 
 .small-head{
@@ -85,9 +95,16 @@ a:hover{
   text-align: center;
 }
 
+.contentCover{
+  background-color:rgba(208, 208, 208, 0.7);
+}
+
+.nameTitle{
+  font-family: 'Raleway', sans-serif;
+}
+
 .descriptionText{
- color: #FFFFFF;
- font-family: 'Oswald', sans-serif;
+ font-family: 'Raleway', sans-serif;
  font-size: 25px;
  left: 30%;
 
