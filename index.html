@@ -40,10 +40,10 @@
 
         <div class="col-md-2" style="margin-top:15px;">
         <!-- <a href="mailto:samkdavey@gmail.com" class="fa fa-envelope-square fa-3x icon-spacing icons" aria-hidden="true"></a> -->
-        <a href="https://www.linkedin.com/in/sam-davey-507553a9" class="fa fa-linkedin-square fa-3x icon-spacing icons" aria-hidden="true"></a>
-        <a href="https://github.com/samodavey" class="fa fa-github-square fa-3x icon-spacing icons" aria-hidden="true"></a>
-        <a href="https://twitter.com/DeadpanDevs"class="fa fa-twitter-square fa-3x icon-spacing icons" aria-hidden="true"></a>
-        <a href="https://www.twitch.tv/lordredonkulous" class="fa fa-twitch fa-3x icon-spacing icons" aria-hidden="true"></a>
+        <a href="https://www.linkedin.com/in/sam-davey-507553a9" class="fa fa-linkedin-square fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
+        <a href="https://github.com/samodavey" class="fa fa-github-square fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
+        <a href="https://twitter.com/DeadpanDevs"class="fa fa-twitter-square fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
+        <a href="https://www.twitch.tv/lordredonkulous" class="fa fa-twitch fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
         </div>
     </nav>
     <div class="text">
@@ -51,13 +51,13 @@
       <a href="https://twitter.com/samkddev?lang=en" target="_blank"><img src="Media Files\PNG\Me.png" class="img-circle profileImg"></img></a>
     </div>
 
-<div>
-    <h3 class="col-md-12 nameTitle">Sam Davey</h3>
-    <h4 class="col-md-12 nameTitle">Developer</h4>
+<div class="col-md-2 col-md-offset-5 contentCover">
+    <h3 class="col-md-12 nameTitle" style="border-bottom: 1px solid #3C403F; padding-bottom:15px;">Sam Davey</h3>
+    <h4 class="col-md-12 nameTitle" style="padding-top:-15px;">Developer</h4>
 </div>
 
 <div class="contentCover">
-<h2 id="about" style="border-bottom: 4px solid grey; margin-top:100px;">About</h2>
+<h2 id="about" style="border-bottom: 4px solid grey; margin-top:150px;">About</h2>
 <div style="padding:25px; text-align:left; margin-left:30%; margin-right:30%;">
 <p>I am a third year student at Plymouth University, studying Computing & Games Development (BSc). I specialise in programming and my main language is C# however I have experience with other languages such as Java, C++ and a variety of web frameworks.<br/><br/>
 When given a task I always strive to give every effort I have to achieve my targets and go beyond the expected in order to provide a better product.
@@ -94,8 +94,7 @@ Teamwork and presentation are key aspects I always attempt to demonstrate well t
 </div>
 
 <div class="contentCover">
-<h2 id="projects">Projects</h2>
-
+<h2 id="projects" style="border-bottom: 4px solid grey; margin-top:150px;">Projects</h2>
 <div class="col-md-12">
     <p class="descriptionText">
       Here are some recent projects I have worked on!
@@ -108,18 +107,51 @@ Teamwork and presentation are key aspects I always attempt to demonstrate well t
 
 
 
-<div style="background-color:rgba(208, 208, 208, 0.7);">
-<h2 id="cv">CV</h2>
+<div class="contentCover">
+<h2 id="cv" style="border-bottom: 4px solid grey; margin-top:150px;">CV</h2>
 <h2 class="descriptionText" style="margin-top:30px; padding-bottom:50px;">You can download a PDF copy of my CV <a href="Media Files\PDF\Sam Davey-CV.pdf" target="_blank" download><u>HERE</u></a></h2>
 <!-- <img src="Media Files\PNG\Sam Davey-CV-1.png" alt="CV Page 1" style="padding:25px;"></img>
 <img src="Media Files\PNG\Sam Davey-CV-2.png" alt="CV Page 2" style="padding:25px;"></img> -->
 </div>
 
+<div class="contentCover col-md-12" style="margin-top:150px;">
+<h2 id="contact" style="border-bottom: 4px solid grey;">Contact</h2>
+<a class="twitter-timeline" data-width="350" data-height="850" data-theme="dark" href="https://twitter.com/SamKDdev?ref_src=twsrc%5Etfw">Tweets by SamKDdev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="container col-md-4 col-md-offset-4">
+  <form action="mailto:samkdavey@gmail.com" method="post" enctype="text/plain">
+    <h2>Email Me:</h2>
+    <h4>Please feel free to contact me if you have any enquiries or suggestions feel free to contact me via the form below.</h4>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="lname">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="Subject">
+      <option value="enquiry">Enquiry</option>
+      <option value="suggestion">Suggestion</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</div>
 
     </div>
     <div class="container">
       <video autoplay muted loop id="videoBackground">
-        <source src="Media Files\Mp4\Airtaxi.mp4" type="video/mp4"></source>
+        <source src="Media Files\Mp4\Aloha-Mundo.mp4" type="video/mp4"></source>
+        <!-- <source src="Media Files\Mp4\Airtaxi.mp4" type="video/mp4"></source> -->
       </video>
     </div>
   </body>
