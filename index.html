@@ -119,7 +119,7 @@ Teamwork and presentation are key aspects I always attempt to demonstrate well t
 <a class="twitter-timeline" data-width="350" data-height="850" data-theme="dark" href="https://twitter.com/SamKDdev?ref_src=twsrc%5Etfw">Tweets by SamKDdev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <div class="container col-md-4 col-md-offset-4">
-  <form action="mailto:samkdavey@gmail.com" method="post" enctype="text/plain">
+  <form action="email.php" method="post" enctype="text/plain">
     <h2>Email Me:</h2>
     <h4>Please feel free to contact me if you have any enquiries or suggestions feel free to contact me via the form below.</h4>
     <label for="fname">First Name:</label>
@@ -138,10 +138,11 @@ Teamwork and presentation are key aspects I always attempt to demonstrate well t
       <option value="other">Other</option>
     </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="message">Subject</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" disabled>
+    <!-- Need to implement email feature ASAP! -->
 
   </form>
 </div>
