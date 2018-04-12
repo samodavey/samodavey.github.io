@@ -25,4 +25,4 @@ $('.cvlink').on('click', function() {
 
 $('.underConstruction').on('click', function() {
   alert("I am an alert box!");
-}
+})

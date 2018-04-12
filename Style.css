@@ -108,6 +108,12 @@ input[type=submit]:hover {
   color: #3C403F;
 }
 
+.toolsIcon{
+  height: 150px;
+  width: 150px;
+  margin: 25px;
+}
+
 .navbarLinks{
   cursor: pointer;
   color: #3C403F !important;
