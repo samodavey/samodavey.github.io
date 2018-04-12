@@ -23,6 +23,7 @@ $('.cvlink').on('click', function() {
     body.stop().animate({scrollTop:$('#cv').offset().top}, '500');
 })
 
-$('.underConstruction').on('click', function() {
-  alert("I am an alert box!");
+$('.contactlink').on('click', function() {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:$('#contact').offset().top}, '500');
 })
