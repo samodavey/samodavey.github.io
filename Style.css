@@ -49,7 +49,7 @@ h2{
   font-family: 'Oswald', sans-serif;
   font-size: 50px;
   color: #3C403F;
-  margin-top: 75px;
+  /* margin-top: 75px; */
 }
 
 sup{
@@ -113,6 +113,7 @@ a:hover{
 
 .contentCover{
   background-color:rgba(208, 208, 208, 0.7);
+  margin-bottom: 5%;
 }
 
 .nameTitle{
@@ -124,7 +125,7 @@ a:hover{
 .descriptionText{
  font-family: 'Raleway', sans-serif;
  font-size: 25px;
- left: 30%;
+ /* left: 30%; */
 
  /*text-align: center;
  display: table-cell;
