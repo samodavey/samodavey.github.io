@@ -1,0 +1,57 @@
+Objective
+
+To beat the dealer by having a higher card total without going over 21
+
+Card Values
+
+2 to 10 = Face Value
+
+J, Q, K = 10
+
+Ace = 1 or 11 
+
+**Note: The card suits are irrelevant in Blackjack.**
+
+Definitions
+
+Blackjack = an Ace and a card worth 10 points (21 total)
+
+Hit = draw another card
+
+Stand = take no more cards
+
+Bust = going over 21
+
+How to Play
+
+- Players place bets by putting the desired number of chips in the circle in front of their seat.
+
+- The dealer deals two cards face up to each player. The dealer receives one card face up and one face down.
+
+- The dealer asks each player, in turn, whether they want to hit or stand.
+
+- Base your decision on the assumption that the dealer has a card worth 10 points in the hole.
+
+- Indicate that you want a hit by tapping the table or making a motion to beckon another card (as if motioning someone to “come on back”). Continue until you desire no more cards.
+
+ **Note: Most casinos do not allow you to touch the cards.**
+
+- If you don’t want a hit (or are finished hitting), indicate so by waving your hand back and forth face down over your cards.
+
+- Once all players have made their decisions, the dealer reveals his hole card and hits or stands as appropriate.
+
+- Payouts are issued based on the outcome.
+
+Winning
+
+If your total is higher than the dealer’s (or if the dealer busts), you win.
+
+Payouts
+
+- If you get Blackjack, the dealer pays you 3 to 2.
+
+- If you and the dealer both get Blackjack, it is a push and no chips are given or taken away.
+
+- If you have a higher total than the dealer (or the dealer busts), the dealer matches the amount of your chips.
+
+- If you have a lower total than the dealer (or you bust), the dealer takes your chips.

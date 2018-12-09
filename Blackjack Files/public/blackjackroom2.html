@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BlackJack Game</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!--Font Awesome Icons link-->
+    <!--<link rel="stylesheet" href="C:\Users\Sam\Desktop\Invisible Victorian\Font-Awesome\font-awesome-4.7.0\css\font-awesome.min.css">-->
+</head>
+<body onload="getPlayer()">
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <!--<div class="filter"></div>-->
+            <video autoplay loop class="fillWidth">
+                <source src="Media Files\Manhatten-Night.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <h1 id="chosenName"></h1>
+
+            <div id="dealerHand" style="z-index:1; position:absolute; right:15%; top:15%;"></div>
+
+            <h2 id="dealerHandTotal" style="top:20%; left:20%;">Dealer Total:</h2>
+
+            <div id="playerHand" style="z-index:1; position:absolute; right:15%; top:45%;"></div>
+
+            <h2 id="handTotal" style="top:50%; left:20%;">Player Total:</h2>
+
+            <button id="btnDeal" type="submit" style="top:75%; left: 40%;">Deal</button>
+            <button id="btnHit" style="top:75%; left: 40%;">Hit</button>
+            <button id="btnStand" style="top:75%; left: 60%;">Stand</button>
+
+            <button id="btnRestart" type="submit" style="top:75%; left: 40%;">Restart</button>
+
+            <h2 id="gameResult" style="top:70%; left:20%;"></h2>
+
+            <h2 style="top:20%; left:85%;">Bank Balance: </h2>
+            <h2 id="playerBalance" style="top:25%; left:85%;">£1000</h2>
+
+            <input id="bettingAmount" type="number" name="bettingAmount" style="top:35%; left:85%;"></input>
+            <button id="btnBet" style="top:45%; left:85%;">Bet</button>
+            <h2 id="currentBet" style="top:55%; left:85%;"></h2>
+
+            <button id="btnRules" style="top:75%; left:85%;">Download Rules</button>
+        </div>
+    </div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="https://use.fontawesome.com/472caf3329.js"></script>
+<script type="text/javascript" src="mainPage.js"></script>
+<script type="text/javascript" src="BlackJackGame.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</html >
