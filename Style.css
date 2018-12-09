@@ -71,6 +71,11 @@ a:hover{
   color:#dfa969 !important;
 }
 
+.displayImg{
+  max-width: 282px;
+  max-height: 156px;
+}
+
 .icons{
   color: #3C403F;
 }
