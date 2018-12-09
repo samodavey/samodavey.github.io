@@ -7,8 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Sam Davey</title>
 
-    <!-- PHP -->
-    <?php include('contactForm.php'); ?>
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,7 +25,7 @@
   </head>
   <style>
   </style>
-  <body>
+  <body onload="randBackground();">
     <nav class="navbar navbar-fixed-top" role="navigation">
       <!--Tamper around with Bootstrap columns because of different screen sizes-->
       <h1 class="col-md-2" style="margin-top:0px; font-size: 40px; !important">< Samuel Davey /> </h1>
@@ -61,7 +59,7 @@
 <div class="contentCover">
 <h2 id="about" style="border-bottom: 4px solid grey; margin-top:150px;">About</h2>
 <div style="padding:25px; text-align:left; margin-left:30%; margin-right:30%;">
-<p>Hi there! My name is Sam Davey and I'm a 22 year old third year student at Plymouth University, studying Computing & Games Development (BSc). I specialise in programming and my main language is C# however I have experience with other languages such as Java, C++ and a variety of web frameworks.<br/><br/>
+<p>Hi there! My name is Sam Davey and I'm a 23 year old third year graduate who studied at Plymouth University, studying Computing & Games Development (BSc). I specialise in programming and my main language is C# however I have experience with a variety of other languages such as Java, C++ and a variety of web frameworks.<br/><br/>
 When given a task I always strive to give every effort I have to achieve my targets and go beyond the expected in order to provide a better product.
 Teamwork and presentation are key aspects I always attempt to demonstrate well to an audience as I personally believe these are vital within any industry.<br/><br/>
 During a placement year at <a href="https://www.landmark.co.uk/">Landmark Information Group</a> I gained a year and three months worth of industry experience which was certainly a huge step forward on my journey as a developer (Further details can be found in my CV),<br/><br/>
@@ -145,17 +143,70 @@ In my spare time I also enjoy learning other languages, currently I'm practising
 <h2 id="contact" style="border-bottom: 4px solid grey;">Contact</h2>
 <a class="twitter-timeline" data-width="350" data-height="550" data-theme="dark" href="https://twitter.com/SamKDdev?ref_src=twsrc%5Etfw">Tweets by SamKDdev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<div class="container col-md-4 col-md-offset-4">
+<!-- <div class="container col-md-4 col-md-offset-4">
   <script type="text/javascript" defer src="//www.123formbuilder.com/embed/3629362.js" data-role="form" data-default-width="650px" data-default-height="950px"></script>
-</div>
+</div> -->
 </div>
 
     </div>
     <div class="container">
-      <video autoplay muted loop id="videoBackground">
+      <!-- <video autoplay muted loop id="videoBackground">
         <source src="Media Files\Mp4\Aloha-Mundo.mp4" type="video/mp4"></source>
-        <!-- <source src="Media Files\Mp4\Airtaxi.mp4" type="video/mp4"></source> -->
-      </video>
+      </video> -->
+      <div class="fullscreen background" id="videoBackground" style="width: 1920px; height:1080px;"></div>
+
+      <script>
+          function randBackground(){
+            var letters = '0123456789ABCDEF';
+            var colorXR = '#';
+            var colorXG = '#';
+            var colorXB = '#';
+
+            var colorYR = '#';
+            var colorYG = '#';
+            var colorYB = '#';
+            for (var i = 0; i < 6; i++) {
+            colorXR += letters[Math.floor(Math.random() * 16)];
+            colorXG += letters[Math.floor(Math.random() * 16)];
+            colorXB += letters[Math.floor(Math.random() * 16)];
+
+            colorYR += letters[Math.floor(Math.random() * 16)];
+            colorYG += letters[Math.floor(Math.random() * 16)];
+            colorYB += letters[Math.floor(Math.random() * 16)];
+            }
+              var pattern = Trianglify({
+              width: 1920,
+              height: 1080,
+              cell_size: 300 + Math.random() * 1000,
+              x_colors: [colorXR,colorXG,colorXB],
+              y_colors: [colorYR,colorYG,colorYB],
+              // x_colors: ['#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16)],
+              // y_colors: ['#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16)],
+              stroke_width: 3
+            }).png();
+              var pattern64 = pattern.substr(pattern.indexOf('base64') + 7);
+
+          var sheet = (function() {
+              var style = document.createElement("style");
+
+              style.appendChild(document.createTextNode(""));
+
+              document.head.appendChild(style);
+
+              return style.sheet;
+          })();
+          sheet.insertRule(".background { background: transparent url(data:image/png;base64,"+pattern64+"); }", 0.5);
+          }
+
+          // function getRandomColor() {
+          //   var letters = '0123456789ABCDEF';
+          //   var color = '#';
+          //   for (var i = 0; i < 6; i++) {
+          //   color += letters[Math.floor(Math.random() * 16)];
+          //   }
+          //   return color;
+          // }
+          </script>
     </div>
   </body>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -164,4 +215,5 @@ In my spare time I also enjoy learning other languages, currently I'm practising
   <script src="js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/472caf3329.js"></script>
   <script type="text/javascript" src="mainPage.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 </html>
