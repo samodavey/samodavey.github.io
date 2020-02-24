@@ -56,12 +56,28 @@
                   <td>{{$row['title']}}</td>
                   <td>{{$row['author']}}</td>
                   <td><a class="btn btn-warning" href="{{action('BookController@edit',$row['id'])}}" >Edit</a></td>
-                  <td></td>
+                  <td>
+                    <form method="post" class="delete_form" action="{{action('BookController@destroy', $row['id'])}}">
+                      {{csrf_field()}}
+                      <input type="hidden" name="_method" value="DELETE"/>
+                      <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                  </td>
                 </tr>
                 @endforeach
               </tbody>
             </table>
-
+            <script>
+            $(document).ready(function(){
+              $('.delete_form').on('submit',function(){
+                if(confirm("Are you sure you wish to delete this book?")){
+                  return true;
+                }else{
+                  return false;
+                }
+              });
+            });
+            </script>
             </div>
 
           </div>

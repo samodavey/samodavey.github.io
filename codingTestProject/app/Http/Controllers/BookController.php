@@ -83,11 +83,9 @@ class BookController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-          'title' => 'required',
           'author' => 'required'
         ]);
         $book = Book::find($id);
-        $book->title= $request->get('title');
         $book->author= $request->get('author');
         $book->save();
         return redirect()->route('book.index')->with('Success','Data Updated');
@@ -101,6 +99,8 @@ class BookController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $book = Book::find($id);
+        $book->delete();
+        return redirect()->route('book.index')->with('success','Data Deleted');
     }
 }

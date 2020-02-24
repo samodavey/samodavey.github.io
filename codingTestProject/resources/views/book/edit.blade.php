@@ -7,7 +7,7 @@
 <div class="modal-dialog" role="document">
   <div class="modal-content">
     <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Edit Book</h5>
+      <h5 class="modal-title" id="exampleModalLabel">Change Author</h5>
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -32,15 +32,9 @@
         <input type="hidden" name="_method" value="PATCH"/>
 
         <div class="form-group formField">
-          <label for="inputTitle">Title</label>
-          <input type="text" class="form-control" name="title" value="{{$book->title}}">
-          <small class="form-text text-muted">Please add the title of the book</small>
-        </div>
-
-        <div class="form-group formField">
           <label for="inputAuthor">Author</label>
           <input type="text" class="form-control" name="author" value="{{$book->author}}">
-          <small class="form-text text-muted">Please add the author of the book</small>
+          <small class="form-text text-muted">Please update the author of the book</small>
         </div>
 
         <div class="modal-footer form-group">
