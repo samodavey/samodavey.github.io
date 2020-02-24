@@ -15,6 +15,7 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::all()->toArray();
+        return view('book.home',compact('books'));
     }
 
     /**
@@ -25,7 +26,7 @@ class BookController extends Controller
     public function create()
     {
         //
-        return view('home');
+        return view('book.home');
     }
 
     /**
@@ -46,7 +47,7 @@ class BookController extends Controller
           'author' => $request->get('author'),
         ]);
         $book->save();
-        return redirect()->route('home')->with('success','Data Added');
+        return redirect()->route('book.index')->with('success','Data Added');
     }
 
     /**
@@ -68,7 +69,8 @@ class BookController extends Controller
      */
     public function edit($id)
     {
-        //
+        $book = Book::find($id);
+        return view('book.edit', compact('book','id'));
     }
 
     /**
@@ -80,7 +82,15 @@ class BookController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+          'title' => 'required',
+          'author' => 'required'
+        ]);
+        $book = Book::find($id);
+        $book->title= $request->get('title');
+        $book->author= $request->get('author');
+        $book->save();
+        return redirect()->route('book.index')->with('Success','Data Updated');
     }
 
     /**
