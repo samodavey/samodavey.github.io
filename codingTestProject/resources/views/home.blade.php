@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
@@ -17,7 +17,7 @@
                     You are logged in!
                 </div>
 
-            </div>
+            </div> -->
 
             <div class="card">
               <div class="card-header">
@@ -50,7 +50,7 @@
               </thead>
               <tbody>
                 <?php
-                $connect = new mysqli("localhost", "root", "", "Library");
+                $connect = new mysqli("localhost", "root", "Dlficiqlzbna82!", "Library");
                 if($connect != null){
                  // echo "connected";
                 }else {
@@ -64,7 +64,7 @@
                   <td><?php echo $row[1];?></td>
                   <td><?php echo $row[2];?></td>
                   <td>
-                    
+
                   </td>
                 </tr>
               <?php endwhile;?>
