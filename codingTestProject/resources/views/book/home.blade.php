@@ -40,6 +40,9 @@
               </div>
 
           <div class="card-body">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Book Data"/>
+            <br />
+            <br />
             <div>
               <table class="table">
               <thead>
@@ -55,6 +58,7 @@
                 <tr>
                   <td>{{$row['title']}}</td>
                   <td>{{$row['author']}}</td>
+                  
                   <td><a class="btn btn-warning" href="{{action('BookController@edit',$row['id'])}}" >Edit</a></td>
                   <td>
                     <form method="post" class="delete_form" action="{{action('BookController@destroy', $row['id'])}}">
@@ -67,17 +71,6 @@
                 @endforeach
               </tbody>
             </table>
-            <script>
-            $(document).ready(function(){
-              $('.delete_form').on('submit',function(){
-                if(confirm("Are you sure you wish to delete this book?")){
-                  return true;
-                }else{
-                  return false;
-                }
-              });
-            });
-            </script>
             </div>
 
           </div>
@@ -86,5 +79,38 @@
         </div>
     </div>
 </div>
+<script type="application/javascript">
+$(document).ready(function(){
+  $('.delete_form').on('submit',function(){
+    if(confirm("Are you sure you wish to delete this book?")){
+      return true;
+    }else{
+      return false;
+    }
+  });
+
+  //fetch_book_data();
+
+  function fetch_book_data(query = ''){
+    $.ajax({
+      url:"{{route('book.action')}}",
+      method:'GET',
+      data:{query:query},
+      dataType:'json',
+      success:function(data){
+        $('tbody').html(data.table_data);
+      }
+    });
+
+  }
+
+  $(document).on('keyup','#search', function(){
+    var query = $(this).val();
+    fetch_book_data(query);
+  });
+
+
+});
+</script>
 
 @endsection

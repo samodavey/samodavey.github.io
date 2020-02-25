@@ -28,3 +28,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('book','BookController');
+
+Route::get('/home/action', 'BookController@action')->name('book.action');
