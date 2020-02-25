@@ -19,6 +19,7 @@ class BookController extends Controller
     {
         $book_data = DB::table('books')->get();
         $books = Book::all()->toArray();
+        $books = Book::sortable()->paginate(100);
         return view('book.home',compact('books'))->with('book_data', $book_data);
     }
 

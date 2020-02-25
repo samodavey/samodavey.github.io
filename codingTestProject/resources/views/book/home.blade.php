@@ -54,8 +54,8 @@
               <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Author</th>
+                  <th scope="col">@sortablelink('title')</th>
+                  <th scope="col">@sortablelink('author')</th>
                   <th scope="col">Edit</th>
                   <th scope="col">Delete</th>
                 </tr>
