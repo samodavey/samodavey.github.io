@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Sam Davey</title>
+    <title>Coding Test</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,232 +21,58 @@
     <link rel="icon" href="Media_Files\PNG\Me.png">
     <!--Font Awesome Icons link-->
     <!--<link rel="stylesheet" href="C:\Users\Sam\Desktop\Invisible Victorian\Font-Awesome\font-awesome-4.7.0\css\font-awesome.min.css">-->
+
   </head>
   <style>
   </style>
-  <body onload="randBackground();">
-    <nav class="navbar navbar-fixed-top" role="navigation">
-      <!--Tamper around with Bootstrap columns because of different screen sizes-->
-      <h1 class="col-md-2" style="margin-top:0px; font-size: 40px; !important">Samuel Davey</h1>
-        <h3 class="col-md-8">
-        <a class="navigation homelink navbarLinks">Home</a>
-        <a class="navigation aboutlink navbarLinks">About</a>
-        <a class="navigation skillslink navbarLinks">Skills</a>
-        <a class="navigation projectlink navbarLinks">Projects</a>
-        <a class="navigation cvlink navbarLinks">CV</a>
-        <a class="navigation contactlink navbarLinks">Contact</a>
-        </h3>
 
-        <div class="col-md-2" style="margin-top:15px;">
-        <!-- <a href="mailto:samkdavey@gmail.com" class="fa fa-envelope-square fa-3x icon-spacing icons" aria-hidden="true"></a> -->
-        <a href="https://www.linkedin.com/in/sam-davey-507553a9" class="fa fa-linkedin-square fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
-        <a href="https://github.com/samodavey" class="fa fa-github-square fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
-        <a href="https://twitter.com/SamKDdev"class="fa fa-twitter-square fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
-        <a href="https://www.twitch.tv/lordredonkulous" class="fa fa-twitch fa-3x icon-spacing icons" aria-hidden="true" target="_blank"></a>
+  <body>
+    <div class="formContainer">
+      <form>
+        <div class="form-group formField">
+          <label for="inputTitle">Title</label>
+          <input type="title" class="form-control" id="inputTitle" aria-describedby="emailHelp">
+          <small class="form-text text-muted">Please add the title of the book</small>
         </div>
-    </nav>
-    <div class="text">
-    <div style="margin-top:150px;" id="nameTitle">
-      <a href="https://twitter.com/samkddev?lang=en" target="_blank"><img src="Media_Files\PNG\Me.png" class="img-circle profileImg"></img></a>
-    </div>
-
-<div class="col-md-2 col-md-offset-5 contentCover">
-    <h3 class="col-md-12 nameTitle" style="border-bottom: 1px solid #3C403F; padding-bottom:15px;">Sam Davey</h3>
-    <h4 class="col-md-12 nameTitle" style="padding-top:-15px;">Developer</h4>
-</div>
-
-<div class="contentCover col-xs-12">
-<h2 id="about" style="border-bottom: 4px solid grey;">About</h2>
-<div style="padding:25px; text-align:left; margin-left:30%; margin-right:30%;">
-<p>Hi there! My name is Sam Davey and I'm a 23 year old third year graduate who studied at Plymouth University, studying Computing & Games Development (BSc). I specialise in programming and my main language is C# however I have experience with a variety of other languages such as Java, C++ and a variety of web frameworks.<br/><br/>
-When given a task I always strive to give every effort I have to achieve my targets and go beyond the expected in order to provide a better product.
-Teamwork and presentation are key aspects I always attempt to demonstrate well to an audience as I personally believe these are vital within any industry.<br/><br/>
-During a placement year at <a href="https://www.landmark.co.uk/">Landmark Information Group</a> I gained a year and three months worth of industry experience which was certainly a huge step forward on my journey as a developer (Further details can be found in my CV),<br/>
-</p>
-</div>
-</div>
-
-<div class="contentCover col-xs-12">
-<h2 id="projects" style="border-bottom: 4px solid grey;">Portfolio</h2>
-<div class="col-md-12">
-    <p class="descriptionText">
-      Here are some projects I have worked on!
-    </p>
-</div>
-    <h1 class="descriptionText col-xs-12">Research Paper: <a href="Media_Files\PDF\You are now live on Twitch.pdf" target="_blank"><u>You are now live on Twitch</u></a></h1>
-    <h1 class="descriptionText col-xs-12" style="margin-top:30px;">Final Year Project: <a href="https://github.com/samodavey/ThisIsMyStop" target="_blank"><u>This Is My Stop!</u></a></h1>
-    <p class="col-xs-5">"This Is My Stop!" is a 3D third person local multiplayer beat em' up game using standard controller input, this means that multiple cameras will be displayed on the screen showing the perspective for each player character ranging from two to four players.<br><br>
-    The game is set within an urban New York City style subway with two main goals for the players. At the start of the game a random team is selected to play as the targeted gang and their main goal is to reach the exit point without having their team leader (the player) eliminated.
-    Meanwhile, all other teams act as the hunters and their main goal is to track down and destroy the targeted gang.</p>
-    <div class="col-xs-12">
-      <img class="displayImg" src="Media_Files\PNG\Character.png" />
-      <img class="displayImg" src="Media_Files\PNG\Gang_attack.png" />
-    </div>
-    <h1 class="descriptionText col-xs-12" style="margin-top:30px;">VR Project: <a href="https://github.com/samodavey/EchosOfTheBeast" target="_blank"><u>Echos Of The Beast</u></a></h1>
-    <p class="col-xs-5">Echos Of The Beast was a virtual reality developed by myself and two other friends whilst at university. The main premise of the game is that you play the role of Theseus in ancient Greece
-    navigating the labyrinth where the Minotaur resides in the dark.<br><br> Using a microphone with the VR headset the player must use echolocation to navigate the labyrinth and escape without alerting
-    the Minotaur to your presence!</p>
-    <div class="col-xs-12">
-      <img class="displayImg" src="Media_Files\GIF\EchoOfTheBeast1.gif" />
-      <img class="displayImg" src="Media_Files\GIF\EchoOfTheBeast2.gif" />
-      <img class="displayImg" src="Media_Files\GIF\EchoOfTheBeast3.gif" />
-      <img class="displayImg" src="Media_Files\GIF\EchoOfTheBeast4.gif" />
-    </div>
-    <h1 class="descriptionText col-xs-12" style="margin-top:30px;">Web Blackjack Game</h1>
-    <h3 class="descriptionText col-xs-12" style="padding-bottom:50px;">You can play my Blackjack game <a href="Blackjack Files\public\index.html" taget="_blank">here</a></h3>
-    <p class="col-xs-5">This is a Blackjack Game that I made was created to test my abilities with being able to host live Blackjack game sessions on an AWS server.</p>
-    <div class="col-xs-12">
-      <img class="displayImg" src="Media_Files\PNG\Blackjack_Name.png" style="max-width: 500px; max-height: 500px;"/>
-      <img class="displayImg" src="Media_Files\PNG\Blackjack_Game.png" style="max-width: 520px; max-height: 520px;"/>
-    </div>
-    <h1 class="descriptionText col-xs-12" style="margin-top:30px; padding-bottom:50px;">First & Second Year University Work: <a href="http://invisiblevictorianstudios.tumblr.com/tagged/InvisibleVictorianStudios" target="_blank"><u>Blog Posts</u></a></h1>
-</div>
-
-<div class="contentCover col-xs-12">
-<h2 id="jams" style="border-bottom: 4px solid grey;">Personal Projects</h2>
-<div class="col-xs-6">
-  <ul>
-    <h2 class="descriptionText" style="margin-top:30px;">C++ Snake Game</h2>
-    <img src="Media_Files\GIF\Snake.gif" style="padding-bottom:50px;" />
-    <h2 class="descriptionText" style="margin-top:30px;">C++ Battleships</h2>
-    <img src="Media_Files\GIF\Battleship.gif" style="padding-bottom:50px;" />
-  </ul>
-</div>
-<h2 class="descriptionText" style="margin-top:30px;">Buoyancy / Boat Game Prototype</h2>
-<img src="Media_Files\GIF\Boat.gif" style="padding-bottom:50px;" />
-<h2>AND MORE TO COME!</h2>
-<p>(Will upload repository of collated C++ projects ASAP)</p>
-</div>
-
-<div class="contentCover col-xs-12">
-<h2 id="skills" style="border-bottom: 4px solid grey;">Skills</h2>
-  <ul style="list-style-type:square">
-    <li>C# Programming</li>
-    <li>Object-Oriented Development</li>
-    <li>Unity 3D Development</li>
-    <li>GIT Repo version control</li>
-  </ul>
-  <ul style="list-style-type:square">
-    <li>Java</li>
-    <li>Javascript</li>
-    <li>C++ Programming</li>
-    <li>Unit Testing</li>
-  </ul>
-  <ul style="list-style-type:square">
-    <li>CLI testing (E.g. Karma & Jasmine)</li>
-    <li>HTML/CSS</li>
-    <li>AngularJS</li>
-    <li>Bootstrap</li>
-  </ul>
-  <ul style="list-style-type:square">
-    <li>NodeJS</li>
-    <li>Teamwork Focused</li>
-    <li>NPM Experience</li>
-    <li>HLSL Experience</li>
-  </ul>
-</div>
-
-
-
-  <div class="contentCover col-xs-12">
-
-  <h2 id="skills" style="border-bottom: 4px solid grey;">Tools I have used</h2>
-  <div>
-    <a href="https://www.visualstudio.com/" target="_blank"><img src="Media_Files\PNG\Tool Icons\VS.png" class="toolsIcon"></img></a>
-    <a href="https://unity3d.com/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Unity.png" class="toolsIcon"></img></a>
-    <a href="https://git-scm.com/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Git.png" class="toolsIcon"></img></a>
-    <a href="https://github.com/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Github.png" class="toolsIcon"></img></a>
-    <a href="https://getbootstrap.com/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Bootstrap.png" class="toolsIcon"></img></a>
-  </div>
-  <div>
-    <a href="https://atom.io/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Atom.png" class="toolsIcon"></img></a>
-    <a href="https://nodejs.org/en/" target="_blank"><img src="Media_Files\PNG\Tool Icons\NodeJS.png" class="toolsIcon"></img></a>
-    <a href="https://jasmine.github.io/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Jasmine.png" class="toolsIcon"></img></a>
-    <a href="https://karma-runner.github.io/2.0/index.html" target="_blank"><img src="Media_Files\PNG\Tool Icons\Karma.png" class="toolsIcon"></img></a>
-    <a href="https://gruntjs.com/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Grunt.png" class="toolsIcon"></img></a>
-    <a href="https://www.gitkraken.com/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Gitkraken.png" class="toolsIcon"></img></a>
-    <a href="https://azure.microsoft.com/en-gb/" target="_blank"><img src="Media_Files\PNG\Tool Icons\Azure.png" class="toolsIcon"></img></a>
+        <div class="form-group formField">
+          <label for="inputAuthor">Author</label>
+          <input type="author" class="form-control" id="inputAuthor">
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+    </form>
   </div>
 
+<div style="width: 600px; margin: 0 auto;">
+  <table class="table">
+  <thead>
+    <tr>
+
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
 </div>
-
-
-
-
-<div class="contentCover col-xs-12">
-<h2 id="cv" style="border-bottom: 4px solid grey;">CV</h2>
-<h2 class="descriptionText" style="margin-top:30px; padding-bottom:50px;">You can download a PDF copy of my CV <a href="Media_Files\PDF\Sam Davey-CV.pdf" target="_blank" download><u>HERE</u></a></h2>
-<!-- <img src="Media_Files\PNG\Sam Davey-CV-1.png" alt="CV Page 1" style="padding:25px;"></img>
-<img src="Media_Files\PNG\Sam Davey-CV-2.png" alt="CV Page 2" style="padding:25px;"></img> -->
-</div>
-
-<div class="contentCover col-xs-12">
-<h2 id="contact" style="border-bottom: 4px solid grey;">Contact</h2>
-<h3>Email: <a href="mailto:samkdavey@gmail.com">samkdavey@gmail.com</a></h3>
-<!-- <a class="twitter-timeline" data-width="350" data-height="550" data-theme="dark" href="https://twitter.com/SamKDdev?ref_src=twsrc%5Etfw">Tweets by SamKDdev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-</div>
-
-    </div>
-    <div class="container">
-      <!-- <video autoplay muted loop id="videoBackground">
-        <source src="Media_Files\Mp4\Aloha-Mundo.mp4" type="video/mp4"></source>
-      </video> -->
-      <div class="fullscreen background" id="videoBackground" style="width: 1920px; height:1080px;"></div>
-
-      <script>
-          function randBackground(){
-            var letters = '0123456789ABCDEF';
-            var colorXR = '#';
-            var colorXG = '#';
-            var colorXB = '#';
-
-            var colorYR = '#';
-            var colorYG = '#';
-            var colorYB = '#';
-            for (var i = 0; i < 6; i++) {
-            colorXR += letters[Math.floor(Math.random() * 16)];
-            colorXG += letters[Math.floor(Math.random() * 16)];
-            colorXB += letters[Math.floor(Math.random() * 16)];
-
-            colorYR += letters[Math.floor(Math.random() * 16)];
-            colorYG += letters[Math.floor(Math.random() * 16)];
-            colorYB += letters[Math.floor(Math.random() * 16)];
-            }
-              var pattern = Trianglify({
-              width: 1920,
-              height: 1080,
-              cell_size: 300 + Math.random() * 1000,
-              x_colors: [colorXR,colorXG,colorXB],
-              y_colors: [colorYR,colorYG,colorYB],
-              // x_colors: ['#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16)],
-              // y_colors: ['#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16), '#' +(Math.random()*0xFFFFFF<<0).toString(16)],
-              stroke_width: 3
-            }).png();
-              var pattern64 = pattern.substr(pattern.indexOf('base64') + 7);
-
-          var sheet = (function() {
-              var style = document.createElement("style");
-
-              style.appendChild(document.createTextNode(""));
-
-              document.head.appendChild(style);
-
-              return style.sheet;
-          })();
-          sheet.insertRule(".background { background: transparent url(data:image/png;base64,"+pattern64+"); }", 0.5);
-          }
-
-          // function getRandomColor() {
-          //   var letters = '0123456789ABCDEF';
-          //   var color = '#';
-          //   for (var i = 0; i < 6; i++) {
-          //   color += letters[Math.floor(Math.random() * 16)];
-          //   }
-          //   return color;
-          // }
-          </script>
-    </div>
   </body>
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
