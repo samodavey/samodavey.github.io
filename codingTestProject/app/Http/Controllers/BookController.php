@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Excel;
+use App\Exports\BookExport;
 use App\Book;
 
 class BookController extends Controller
@@ -15,8 +17,19 @@ class BookController extends Controller
      */
     public function index()
     {
+        $book_data = DB::table('books')->get();
         $books = Book::all()->toArray();
-        return view('book.home',compact('books'));
+        return view('book.home',compact('books'))->with('book_data', $book_data);
+    }
+
+    public function export()
+    {
+        return Excel::download(new BookExport, 'Books.xlsx');
+    }
+
+    public function exportcsv()
+    {
+        return Excel::download(new BookExport, 'Books.csv');
     }
 
     public function action(Request $request){

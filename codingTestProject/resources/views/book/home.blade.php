@@ -42,6 +42,13 @@
           <div class="card-body">
             <input type="text" name="search" id="search" class="form-control" placeholder="Search Book Data"/>
             <br />
+            <div align="center">
+              <a href="{{action('BookController@export')}}" class="btn btn-success">Export to Excel</a>
+            </div>
+            <br />
+            <div align="center">
+              <a href="{{action('BookController@exportcsv')}}" class="btn btn-success">Export to CSV</a>
+            </div>
             <br />
             <div>
               <table class="table">
@@ -58,7 +65,7 @@
                 <tr>
                   <td>{{$row['title']}}</td>
                   <td>{{$row['author']}}</td>
-                  
+
                   <td><a class="btn btn-warning" href="{{action('BookController@edit',$row['id'])}}" >Edit</a></td>
                   <td>
                     <form method="post" class="delete_form" action="{{action('BookController@destroy', $row['id'])}}">

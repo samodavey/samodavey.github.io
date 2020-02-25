@@ -30,3 +30,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('book','BookController');
 
 Route::get('/home/action', 'BookController@action')->name('book.action');
+
+Route::get('export', 'BookController@export');
+
+Route::get('exportcsv', 'BookController@exportcsv');
