@@ -9,6 +9,20 @@ body, html{
    -o-background-size:cover;
    background-size:cover;
 }
+.wave{
+  display: block;
+}
+.wavePath{
+  animation: 20s linear infinite alternate;
+  animation-play-state: running;
+  -webkit-animation: 20s linear infinite alternate;
+  -webkit-animation-name: wavesPath;
+  -webkit-animation-duration: 20s;
+}
+@-webkit-keyframes wavePath{
+  0% {background-color: blue;}
+  100% {background-color: blueviolet;}
+}
 .headline{
   font-family: 'Playfair Display', serif;
   font-size: 24px;
@@ -42,6 +56,7 @@ body, html{
 }
 .contact-section{
   text-align: center;
+  background: #ededed!important;
   padding-top: 3em;
   padding-bottom: 4em;
 }
@@ -62,9 +77,18 @@ body, html{
 .border{
   border: 1px solid #f0eeee;
 }
+.navbar{
+  background: #ededed!important;
+}
+.navbar-collapse{
+  margin-left: 2em;
+}
 .scale-up-center {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.mockupImage{
+  width: 300px;
 }
 p{
   font-family: 'Playfair Display', serif;
@@ -115,6 +139,9 @@ h3{
 }
 h4{
   font-size: 1.25em;
+}
+path{
+  fill: #ededed!important;
 }
 
 /* ----------------------------------------------
