@@ -1,7 +1,9 @@
+html{
+  scroll-behavior: smooth;
+}
 body, html{
   margin:0;
   padding:0;
-  background: url('Media Files/Test3.jpg');
   -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
