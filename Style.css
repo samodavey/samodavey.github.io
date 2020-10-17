@@ -84,7 +84,21 @@ body, html{
   margin-top: 50px;
   display: block;
 }
-.sparkFilterImg{
+.vrProj img{
+  margin: 10px;
+}
+.finalYear img{
+  margin: 10px;
+  border: 10px black solid;
+}
+.wanderImage img{
+  width: 350px;
+}
+.mockupImage img{
+  margin: 10px;
+  width: 400px;
+}
+.sparkFilterImg img{
   border: 10px black solid;
   margin: 20px;
 }
@@ -132,9 +146,6 @@ body, html{
 .scale-up-center {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-.mockupImage{
-  width: 300px;
 }
 p{
   font-family: 'Playfair Display', serif;
