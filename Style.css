@@ -147,6 +147,14 @@ body, html{
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+/* .navbar-nav{
+  margin: auto;
+} */
+.navbar-nav li{
+  font-size: 25px;
+  padding: 10px;
+  letter-spacing: 5px;
+}
 p{
   font-family: 'Playfair Display', serif;
   /* font-size: 24px; */
@@ -170,7 +178,7 @@ a{
   display: inline-block;
 }
 p a{
-  color: #02bd7b;
+  color: rgba(231,47,0,1);
 }
 p a:hover{
   color: #000;
