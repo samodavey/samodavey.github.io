@@ -13,7 +13,14 @@
 
     <link rel="stylesheet" type="text/css" href="Style.css">
     <link rel="icon" href="Media_Files\PNG\Me.png">
-    <!--Font Awesome Icons link-->
+    
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
   </head>
   <body>
         <div class="col-xs-12">
@@ -31,7 +38,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
-                <!-- <li class="nav-item"><a href="travel.html" class="nav-link">Travel</a></li> -->
+                <li class="nav-item"><a href="travel.html" class="nav-link">Travel</a></li>
                 <li class="nav-item"><a href="#contactMe" class="nav-link">Contact</a></li>
             </ul>
             </div>
@@ -39,66 +46,104 @@
             </nav>
         </div>
         </div>
-        
-        <h2>UNDER CONSTRUCTION</h2>
 
-        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div> -->
+        <h2 class="travel-title">Vietnam</h2>
+        <!-- Vietnam -->
+        <div class="travel-class">
+            <img src="assets/JPG/Vietnam Pics/03970fc01a438228d11fa3ffecc10213.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/11012604848f551646ca36d400c4d5cd.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/137d5f4a4fb29eb14176704ac10f7e4a.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/3e4546b1bf5da92b40334d3a318d912b.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/679c4fe67de6c671d1a8d6801d28d58d.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/6b440c14aba1390c9b4c072519fce629.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/70f9a252734003704bff10a62132eaff.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/8dffc4a2b30b6220c268769632a77bbb.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/9495519f37466070a956c7e2480bfeeb.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/f29ddf76e4015f02282bac34a71aed72.jpg"/>
+            <img src="assets/JPG/Vietnam Pics/f706bf0a51e6cee8f89400dc2456317d.jpg"/>
+        </div>
 
-        <!-- <section class="inner-container">
-            
-            <h2><a href="#vietnamCountry" data-toggle="collapse">Vietnam  +</a></h2>
-            <div class="collapse" id="vietnamCountry">
-            <div class="card card-body">
-                Test
-            </div>
-            </div>
-            
-            <h2><a href="#cambodiaCountry" data-toggle="collapse">Cambodia  +</a></h2>
-            <div class="collapse" id="cambodiaCountry">
-            <div class="card card-body">
-                Test
-            </div>
-            </div>
-            
-            <h2><a href="#thailandCountry" data-toggle="collapse">Thailand  +</a></h2>
-            <div class="collapse" id="thailandCountry">
-            <div class="card card-body">
-                Test
-            </div>
-            </div>
-            
-            <h2><a href="#japanCountry" data-toggle="collapse">Japan +</a></h2>
-            <div class="collapse" id="japanCountry">
-            <div class="card card-body">
-                Test
-            </div>
-            </div>
-        </section> -->
+        <h2 class="travel-title">Cambodia</h2>
+        <!-- Cambodia -->
+        <div class="travel-class">
+            <img src="assets/JPG/Cambodia Pics/Cambodia_02.jpg"/>
+            <img src="assets/JPG/Cambodia Pics/Cambodia_03.jpg"/>
+            <img src="assets/JPG/Cambodia Pics/Cambodia_04.jpg"/>
+            <img src="assets/JPG/Cambodia Pics/Cambodia_05.jpg"/>
+            <img src="assets/JPG/Cambodia Pics/Cambodia_06.jpg"/>
+            <img src="assets/JPG/Cambodia Pics/Cambodia_07.jpg"/>
+        </div>
+
+        <h2 class="travel-title">Thailand</h2>
+        <!-- Thailand -->
+        <div class="travel-class">
+            <img src="assets/JPG/Thailand Pics/00052ad9fbd86382ce3c6eed84d7e376.jpg"/>
+            <img src="assets/JPG/Thailand Pics/07f681513bf01aeef7638581372bfc25.jpg"/>
+            <img src="assets/JPG/Thailand Pics/0b8077c9717760423bc2c14ff0a09d86.jpg"/>
+            <img src="assets/JPG/Thailand Pics/3817fdb073f80a7177bcfedf98f9866f.jpg"/>
+            <img src="assets/JPG/Thailand Pics/5f38a2f6a2885c1bf5a0651c63a2c86d.jpg"/>
+            <img src="assets/JPG/Thailand Pics/785ad17961319f7c93a9b53836fd193a.jpg"/>
+            <img src="assets/JPG/Thailand Pics/7a72916eb9502d5bcd1db95f3c14a389.jpg"/>
+            <img src="assets/JPG/Thailand Pics/811c7c56fbfc5f778d347a33f02d373a.jpg"/>
+            <img src="assets/JPG/Thailand Pics/92ab09f2ba6883304af1c82a3daea873.jpg"/>
+            <img src="assets/JPG/Thailand Pics/99b2c9ed6b9ee625bf51c066ba708273.jpg"/>
+            <img src="assets/JPG/Thailand Pics/cf91baec04f4f6d0dd16833f69af9936.jpg"/>
+            <img src="assets/JPG/Thailand Pics/dba2857f895ac93fb76a8621125d09c3.jpg"/>
+        </div>
+
+        <h2 class="travel-title">Japan</h2>
+
+        <!-- Japan -->
+        <div class="travel-class">
+            <img src="assets/JPG/Japan Pics/462da0dffa6a279db8b4ee970a27cec0.jpg"/>
+            <img src="assets/JPG/Japan Pics/47d3ce98eef21d6ef6a255c518fc93e6.jpg"/>
+            <img src="assets/JPG/Japan Pics/57f23325cbd879848237af5cd8965a39.jpg"/>
+            <img src="assets/JPG/Japan Pics/86c717f791fa6fbc5a02fc62dd8046cd.jpg"/>
+            <img src="assets/JPG/Japan Pics/a537453f4174ed4c600c8e300f444635.jpg"/>
+            <img src="assets/JPG/Japan Pics/c1525756d7690acfd7a8ae848befb574.jpg"/>
+            <img src="assets/JPG/Japan Pics/c2e7e247956b61108c377246b62e4cc4.jpg"/>
+            <img src="assets/JPG/Japan Pics/cace2f258979c34d2f252c9d16c38a3b.jpg"/>
+            <img src="assets/JPG/Japan Pics/cb26925303a51ce4ca6b0a7438c74239.jpg"/>
+            <img src="assets/JPG/Japan Pics/d8281b4e4c2aad95beaeb9585ebe92e1.jpg"/>
+            <img src="assets/JPG/Japan Pics/e9c9d62f1b0ecd23e84cea77d6dd41b2.jpg"/>
+            <img src="assets/JPG/Japan Pics/ef60b2e6b6f5a9a412601fff327bc524.jpg"/>
+            <img src="assets/JPG/Japan Pics/fa2953a9f80b2d2f2a92cb8c9d571805.jpg"/>
+        </div>
+
+        <!-- Slick carousel -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('.travel-class').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            autoplay:true,
+            autoplaySpeed:2000,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }
+            ]
+            });
+        });
+        </script>
+           
 
         <!--Waves Container-->
         <div>
@@ -129,10 +174,7 @@
         </div>
         </section>
     </body>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
       <script src="https://use.fontawesome.com/472caf3329.js"></script>
